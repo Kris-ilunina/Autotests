@@ -7,6 +7,11 @@
 
 
 def letter_stat(our_str):
+    """
+    Создаем словарь из строки, где в качестве ключей буквы, а значениями являются числа, соотвестсвующие количеству вхождений буквы в строку
+    :param our_str: строка
+    :return: словарь
+    """
     letters_dict = {i: our_str.count(i) for i in our_str}
     return letters_dict
 
